@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ia-HP-wRO">
+                                <rect key="frame" x="132" y="215" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="9yY-bn-D89"/>
+                                    <constraint firstAttribute="height" constant="40" id="wzs-lB-Fat"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" textContentType="tel"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Amount To Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwH-Bn-4aX">
+                                <rect key="frame" x="127.5" y="144" width="159.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-vj-LGO">
+                                <rect key="frame" x="132" y="315" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="MjS-T7-KsI"/>
+                                </constraints>
+                                <state key="normal" title="Pay with ZainCash">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDd-Ox-omE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re6-aU-Uiv">
+                                <rect key="frame" x="10" y="265" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.77647058820000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OwH-Bn-4aX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="2Rz-h8-opo"/>
+                            <constraint firstItem="OwH-Bn-4aX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DIF-7p-yi7"/>
+                            <constraint firstItem="Fuf-vj-LGO" firstAttribute="top" secondItem="9ia-HP-wRO" secondAttribute="bottom" constant="60" id="MgY-is-a76"/>
+                            <constraint firstItem="Fuf-vj-LGO" firstAttribute="centerX" secondItem="9ia-HP-wRO" secondAttribute="centerX" id="anc-mi-tFL"/>
+                            <constraint firstItem="9ia-HP-wRO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cxG-de-kVZ"/>
+                            <constraint firstItem="re6-aU-Uiv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mBz-pH-EwK"/>
+                            <constraint firstItem="re6-aU-Uiv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ooU-Rl-UVh"/>
+                            <constraint firstItem="re6-aU-Uiv" firstAttribute="top" secondItem="9ia-HP-wRO" secondAttribute="bottom" constant="10" id="uu8-0X-Eht"/>
+                            <constraint firstItem="9ia-HP-wRO" firstAttribute="top" secondItem="OwH-Bn-4aX" secondAttribute="bottom" constant="50" id="zMo-DY-if6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="re6-aU-Uiv" id="T2i-WJ-urq"/>
+                        <outlet property="textfield" destination="9ia-HP-wRO" id="HkL-VZ-Jm8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
