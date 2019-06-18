@@ -1,0 +1,16 @@
+PODS:
+  - KFCSDK (1.0.0)
+
+DEPENDENCIES:
+  - KFCSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KFCSDK
+
+SPEC CHECKSUMS:
+  KFCSDK: 2bf522b81ea1ae811b9eb9e5d3a33152e6073b65
+
+PODFILE CHECKSUM: 1980d3489bf69b37cd02ba550c04a2d07b89f665
+
+COCOAPODS: 1.7.1

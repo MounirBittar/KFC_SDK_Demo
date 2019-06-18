@@ -1,0 +1,4 @@
+framework module KFC {
+  header "KFC-Swift.h"
+  requires objc
+}
