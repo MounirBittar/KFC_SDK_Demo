@@ -1,14 +1,19 @@
-
 <!DOCTYPE html>
-    <html>
-    <head>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </head>
-    <body>
-        <form id="recaptcha-form" action="homepage" method="POST">
-            <div class="g-recaptcha" data-sitekey="6LfQPwgqAAAAAHX12lV_HQPc-TxGeaaOVdPRQlRr"></div>
-            <br/>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
-    </html>
+<html>
+<head>
+    <title>reCAPTCHA v2</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            window.webkit.messageHandlers.recaptchaCallback.postMessage(token);
+        }
+    </script>
+</head>
+<body>
+    <form id="recaptcha-form" onsubmit="event.preventDefault();">
+        <div class="g-recaptcha" data-sitekey="6LfQPwgqAAAAAHX12lV_HQPc-TxGeaaOVdPRQlRr" data-callback="onSubmit"></div>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
